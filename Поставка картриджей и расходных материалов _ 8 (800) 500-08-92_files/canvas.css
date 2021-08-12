@@ -1,0 +1,93 @@
+.canvas_line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 10px;
+  z-index: -1;
+}
+a.flag:hover {
+  text-decoration: none;
+}
+.history_list {
+  position: relative;
+  padding-left: 80px;
+}
+.years_list_scroll {
+  position: absolute;
+  width: 70px;
+  left: 0;
+  padding: 10px 0;
+  border: 1px solid #e6e6e6;
+  top: 0;
+}
+.years_list_scroll .slider .slick-arrow {
+  width: 0;
+  height: 0;
+  border: 17px solid transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: transparent;
+  outline: none;
+  border-left-width: 7px;
+  border-right-width: 7px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 3;
+  padding: 0;
+}
+.years_list_scroll .slider .slick-next {
+  border-top-color: gray;
+  border-bottom: 0;
+  bottom: 35px;
+}
+.years_list_scroll .slider .slick-prev {
+  border-bottom-color: #12982e;
+  border-top: 0;
+  top: 35px;
+}
+.years_list_scroll .slider .slick-slide {
+  height: 70px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font: 400 18px/60px "Raleway", sans-serif;
+  transition: all 0.3s;
+}
+.years_list_scroll .slider .slick-slide.slick-current {
+  color: #12982e;
+  font-weight: bold;
+}
+@media (max-width: 759px) {
+  .canvas_line {
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, 0);
+    margin-left: 15px;
+    top: 15px;
+    z-index: -1;
+  }
+}
+
+.wrapper .clear .submit {
+  margin-top: 30px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrapper .clear .submit button {
+  height: 50px;
+  width: 100%;
+  font: 700 16px/50px 'Raleway', sans-serif;
+  color: #fff;
+  background: #12982e;
+  border: none;
+  cursor: pointer;
+}
+
+.side_panel .urls .item.news a {
+    background: url(../img/icon_news.svg) no-repeat 50% 10px;
+background-size: 32px;
+
+}
