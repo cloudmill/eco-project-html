@@ -462,3 +462,94 @@
     top: 152px;
     left: 987px;
 }
+
+/* checkbox */
+.eco-project__checkbox {
+    position: relative;
+    z-index: 0;
+
+    margin: 0;
+    padding-left: 36px;
+    width: 100%;
+    display: block;
+
+    cursor: pointer;
+}
+/* input */
+.eco-project__checkbox-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+    visibility: hidden;
+
+    opacity: 0;
+}
+.eco-project__checkbox-input:checked + .eco-project__checkbox-box::before {
+    opacity: 1;
+}
+/* box */
+.eco-project__checkbox-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 22px;
+    height: 22px;
+
+    background-color: white;
+    border: 1px solid #e3e3e3;
+}
+.eco-project__checkbox-box::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    content: '';
+
+    background-image: url('checkbox-mark.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
+    opacity: 0;
+    transition: 0.25s;
+}
+/* text */
+.eco-project__checkbox-text {
+    margin: 0;
+
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #252525;
+}
+/* link */
+.eco-project__checkbox-link {
+    color: #12982e;
+}
+.eco-project__checkbox-link:hover {
+    color: #12982e;
+}
+
+/* btn */
+.eco-project__btn {
+    display: flex;
+}
+/* button */
+.eco-project__btn-button {
+    padding: 17px 30px;
+    min-height: 57px;
+    
+    border: none;
+    background-color: #12982e;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 160%;
+    color: white;
+    cursor: pointer;
+}

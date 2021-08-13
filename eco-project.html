@@ -868,9 +868,9 @@
             <div class="eco-project__join-col">
               <label class="eco-project__join-text">
                 <span class="eco-project__join-text-caption">
-                  Ваше имя
+                  Почта для связи
                 </span>
-                <input type="text" name="name" placeholder="Андрей" class="eco-project__join-text-input">
+                <input type="text" name="mail" placeholder="info@gmail.com" class="eco-project__join-text-input">
               </label>
             </div>
           </div>
@@ -878,36 +878,58 @@
             <div class="eco-project__join-col">
               <label class="eco-project__join-text">
                 <span class="eco-project__join-text-caption">
-                  Ваше имя
+                  Название вашей организации
                 </span>
-                <input type="text" name="name" placeholder="Андрей" class="eco-project__join-text-input">
+                <input type="text" name="company" placeholder="Название вашей организации" class="eco-project__join-text-input">
               </label>
             </div>
             <div class="eco-project__join-col">
               <label class="eco-project__join-text">
                 <span class="eco-project__join-text-caption">
-                  Ваше имя
+                  Телефон для связи
                 </span>
-                <input type="text" name="name" placeholder="Андрей" class="eco-project__join-text-input">
+                <input type="text" name="phone" placeholder="+7 (___) ___-__-__" class="eco-project__join-text-input">
               </label>
             </div>
           </div>
+          <!-- 
+            label.eco-project__checkbox
+              input.eco-project__checkbox-input
+              div.eco-project__checkbox-mark
+                ::before (background-image 90%)
+              p.eco-project__checkbox-text
+                |text
+                a.eco-project__checkbox-link
+                  |text
+           -->
           <div class="eco-project__join-row">
             <div class="eco-project__join-col">
-              <label class="eco-project__join-text">
-                <span class="eco-project__join-text-caption">
-                  Ваше имя
-                </span>
-                <input type="text" name="name" placeholder="Андрей" class="eco-project__join-text-input">
+              <!-- <label class="eco-project__join-checkbox">
+                <input class="eco-project__join-checkbox-input" type="checkbox" name="agree" id="agree">
+                <div class="eco-project__join-checkbox-mark"></div>
+                <p class="eco-project__join-checkbox-text">
+                  Я подтверждаю свое согласие на обработку вносимых в форму моих персональных данных и принимаю условия
+                  <a href="/legal-information/" target="_blank">Политики конфиденциальности</a>
+                </p>
+              </label> -->
+
+              <label class="eco-project__checkbox">
+                <input class="eco-project__checkbox-input" type="checkbox" name="agree" id="agree" required>
+                <div class="eco-project__checkbox-box"></div>
+                <p class="eco-project__checkbox-text">
+                  Я подтверждаю свое согласие на обработку вносимых в форму моих персональных данных и принимаю условия
+                  <a class="eco-project__checkbox-link" href="/legal-information/" target="_blank">
+                    Политики конфиденциальности
+                  </a>
+                </p>
               </label>
             </div>
             <div class="eco-project__join-col">
-              <label class="eco-project__join-text">
-                <span class="eco-project__join-text-caption">
-                  Ваше имя
-                </span>
-                <input type="text" name="name" placeholder="Андрей" class="eco-project__join-text-input">
-              </label>
+              <div class="eco-project__btn">
+                <button class="eco-project__btn-button" type="submit">
+                  Отправить
+                </button>
+              </div>
             </div>
           </div>
         </form>
