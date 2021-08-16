@@ -461,7 +461,17 @@
 /* partners */
 .eco-project__partners {
     margin-top: 100px;
-    padding: 0 45px 0 135px;
+    padding: 0 45px 0 calc(45px + ((100% - (45px * 2)) / 16));
+}
+@media (max-width: 1059px) {
+    .eco-project__partners {
+        padding: 0 45px;
+    }
+}
+@media (max-width: 959px) {
+    .eco-project__partners {
+        padding: 0 20px;
+    }
 }
 /* partners: list */
 .eco-project__partners-list {
@@ -473,6 +483,14 @@
 
     list-style: none;
 }
+@media (max-width: 1499px) {
+    .eco-project__partners-list {
+        margin-top: calc(60px - 15px);
+        margin-left: -15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 /* partners: item */
 .eco-project__partners-item {
     padding: 30px;
@@ -483,6 +501,18 @@
     align-items: center;
 
     border: 1px solid #EAEAEA;
+}
+@media (max-width: 1499px) {
+    .eco-project__partners-item {
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 180px;
+    }
+}
+@media (max-width: 479px) {
+    .eco-project__partners-item {
+        width: 100%;
+    }
 }
 /* partners: img */
 .eco-project__partners-image {
