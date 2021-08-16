@@ -25,6 +25,14 @@
     line-height: 100% !important;
     color: #383838;
 }
+@media (max-width: 959px) {
+    h1.eco-project__title {
+        font-size: 44px !important;
+    }
+    h2.eco-project__title {
+        font-size: 32px !important;
+    }
+}
 
 /* top-title */
 .eco-project__top-title {
@@ -75,6 +83,11 @@
 @media (max-width: 1479px) {
     .eco-project__attention-block {
         background-position: left 870px center;
+    }
+}
+@media (max-width: 959px) {
+    .eco-project__attention-block {
+        padding: 60px 20px;
     }
 }
 /* attention: title */
@@ -218,6 +231,11 @@
         padding-left: 0;
     }
 }
+@media (max-width: 959px) {
+    .eco-project__container-desc {
+        font-size: 18px;
+    }
+}
 /* container: tagline */
 .eco-project__container-tagline {
     margin: 0;
@@ -237,6 +255,11 @@
 @media (max-width: 1059px) {
     .eco-project__container-tagline {
         padding-left: 0;
+    }
+}
+@media (max-width: 959px) {
+    .eco-project__container-tagline {
+        font-size: 22px;
     }
 }
 /* container: layout */
@@ -531,14 +554,25 @@
     margin-bottom: 100px;
     padding: 0 45px;
 }
+@media (max-width: 959px) {
+    .eco-project__join {
+        padding: 0 20px;
+    }
+}
 /* block */
 .eco-project__join-block {
     position: relative;
     z-index: 0;
 
-    padding: 60px 90px;
+    padding: 60px calc(100% / 16);
     
     background-color: #EDF6F3;
+}
+@media (max-width: 959px) {
+    .eco-project__join-block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 /* form */
 .eco-project__join-form {
@@ -553,15 +587,23 @@
 .eco-project__join-row:not(:first-child) {
     margin-top: 30px;
 }
-/* col */
-.eco-project__join-col {
-    width: calc((100% - 40px) / 2);
-    flex-shrink: 0;
+@media (max-width: 959px) {
+    .eco-project__join-row {
+        display: block;
+    }
 }
 /* col */
 .eco-project__join-col {
     width: calc((100% - 40px) / 2);
     flex-shrink: 0;
+}
+@media (max-width: 959px) {
+    .eco-project__join-col {
+        width: 100%;
+    }
+    .eco-project__join-col:not(:first-child) {
+        margin-top: 30px;
+    }
 }
 /* text */
 .eco-project__join-text {
