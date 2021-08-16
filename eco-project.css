@@ -177,7 +177,17 @@
     position: relative;
 
     margin-top: 100px;
-    padding: 0 45px 0 135px;
+    padding: 0 45px 0 calc(45px + ((100% - (45px * 2)) / 16))
+}
+@media (max-width: 1259px) {
+    .eco-project__container {
+        padding: 0 45px;
+    }
+}
+@media (max-width: 959px) {
+    .eco-project__container {
+        padding: 0 20px;
+    }
 }
 /* container: caption */
 .eco-project__container-caption {
@@ -202,6 +212,12 @@
     line-height: 160%;
     color: #383838;
 }
+@media (max-width: 1059px) {
+    .eco-project__container-desc {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+}
 /* container: tagline */
 .eco-project__container-tagline {
     margin: 0;
@@ -217,6 +233,11 @@
 }
 .eco-project__container-tagline strong {
     color: #12972E;
+}
+@media (max-width: 1059px) {
+    .eco-project__container-tagline {
+        padding-left: 0;
+    }
 }
 /* container: layout */
 .eco-project__container-layout {
@@ -240,6 +261,11 @@
 
     background-color: #12972E;
 }
+@media (max-width: 1059px) {
+    .eco-project__container-layout::before {
+        display: none;
+    }
+}
 /* container: image */
 .eco-project__container-image {
     position: absolute;
@@ -251,12 +277,22 @@
 
     max-width: 225px;
 }
+@media (max-width: 1059px) {
+    .eco-project__container-image--1 {
+        display: none;
+    }
+}
 .eco-project__container-image--2 {
     z-index: 3;
     top: 0;
     left: 765px;
 
     max-width: 450px;
+}
+@media (max-width: 1059px) {
+    .eco-project__container-image--2 {
+        display: none;
+    }
 }
 .eco-project__container-image--3 {
     z-index: 1;
@@ -274,6 +310,23 @@
 }
 .eco-project__container-image--4 path {
     fill: #12972E;
+}
+@media (max-width: 1059px) {
+    .eco-project__container-image--4 {
+        top: 0;
+        left: auto;
+        right: 45px;
+    }
+}
+@media (max-width: 959px) {
+    .eco-project__container-image--4 {
+        right: 20px;
+    }
+}
+@media (max-width: 619px) {
+    .eco-project__container-image--4 {
+        display: none;
+    }
 }
 
 /* addresses */
