@@ -72,9 +72,9 @@
         background-position: right 125px center;
     }
 }
-@media (max-width: 1259px) {
+@media (max-width: 1479px) {
     .eco-project__attention-block {
-        background-position: left 675px center;
+        background-position: left 870px center;
     }
 }
 /* attention: title */
@@ -139,6 +139,26 @@
     bottom: 12px;
 
     height: 8px;
+}
+@media (max-width: 579px) {
+    .eco-project__attention-mark {
+        width: 30px;
+        height: 30px;
+    }
+    .eco-project__attention-mark::before,
+    .eco-project__attention-mark::after {
+        width: 3px;
+    }
+    .eco-project__attention-mark::before {
+        top: 6px;
+
+        height: 12px;
+    }
+    .eco-project__attention-mark::after {
+        bottom: 6px;
+
+        height: 4px;
+    }
 }
 /* attention: text */
 .eco-project__attention-text {
