@@ -332,7 +332,17 @@
 /* addresses */
 .eco-project__addresses {
     margin-top: 100px;
-    padding: 0 45px 0 135px;
+    padding: 0 45px 0 calc(45px + ((100% - (45px * 2)) / 16));
+}
+@media (max-width: 1059px) {
+    .eco-project__addresses {
+        padding: 0 45px;
+    }
+}
+@media (max-width: 959px) {
+    .eco-project__addresses {
+        padding: 0 20px;
+    }
 }
 /* addresses: caption */
 .eco-project__addresses-caption {
@@ -356,6 +366,11 @@
 
     list-style: none;
 }
+@media (max-width: 1059px) {
+    .eco-project__addresses-list {
+        display: block;
+    }
+}
 /* addresses: item */
 .eco-project__addresses-item {
     position: relative;
@@ -367,6 +382,17 @@
     flex-shrink: 0;
 
     border: 1px solid #EAEAEA;
+}
+@media (max-width: 1059px) {
+    .eco-project__addresses-item {
+        width: 100%;
+    }
+}
+@media (max-width: 619px) {
+    .eco-project__addresses-item {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 /* addresses: layout */
 .eco-project__addresses-layout {
