@@ -609,6 +609,9 @@
     padding-top: 33px;
     display: block;
 }
+.eco-project__join-text.error .eco-project__join-text-input {
+    border-color: #df2140;
+}
 .eco-project__join-text-caption {
     position: absolute;
     top: 0;
@@ -667,6 +670,9 @@
 
     cursor: pointer;
 }
+.eco-project__checkbox.error .eco-project__checkbox-box {
+    border-color: #df2140;
+}
 /* input */
 .eco-project__checkbox-input {
     position: absolute;
@@ -679,6 +685,9 @@
     opacity: 0;
 }
 .eco-project__checkbox-input:checked + .eco-project__checkbox-box::before {
+    opacity: 1;
+}
+.eco-project__checkbox-input:checked + .eco-project__checkbox-box {
     opacity: 1;
 }
 /* box */
@@ -702,7 +711,7 @@
 
     content: '';
 
-    background-image: url('checkbox-mark.svg');
+    background-image: url(https://veneta.ru/local/templates/main/img/all/check.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 90%;

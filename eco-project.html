@@ -89,7 +89,6 @@
       s.parentNode.insertBefore(ba, s);
     })();
   </script>
-
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -868,10 +867,10 @@
           <br>
           к проекту
         </h2>
-        <form action="#" class="eco-project__join-form">
+        <form action="#" id='service_form' class="eco-project__join-form" data-type='form-container'>
           <div class="eco-project__join-row">
             <div class="eco-project__join-col">
-              <label class="eco-project__join-text">
+              <label class="eco-project__join-text item">
                 <span class="eco-project__join-text-caption">
                   Ваше имя
                 </span>
@@ -897,7 +896,7 @@
               </label>
             </div>
             <div class="eco-project__join-col">
-              <label class="eco-project__join-text">
+              <label class="eco-project__join-text item">
                 <span class="eco-project__join-text-caption">
                   Телефон для связи
                 </span>
@@ -916,7 +915,7 @@
                 </p>
               </label> -->
 
-              <label class="eco-project__checkbox">
+              <label class="eco-project__checkbox checkbox">
                 <input class="eco-project__checkbox-input" type="checkbox" name="agree" id="agree" required>
                 <div class="eco-project__checkbox-box"></div>
                 <p class="eco-project__checkbox-text">
@@ -929,7 +928,7 @@
             </div>
             <div class="eco-project__join-col">
               <div class="eco-project__btn">
-                <button class="eco-project__btn-button" type="submit">
+                <button class="eco-project__btn-button action" type="button">
                   Отправить
                 </button>
               </div>
@@ -2408,3 +2407,6 @@
 </body>
 
 </html>
+
+
+<input type="checkbox" />
